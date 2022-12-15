@@ -1,8 +1,18 @@
+@import './utils/variables';
+@import './utils/mixin';
+@import './utils/placeholder';
+@import './utils/hidden';
+
 @import './base/reset';
-@import './utils/vars';
-@import './components/container';
+@import './base/common';
 
-
-
-@import './sections/header';
-@import './sections/hero';
+@import './components/logo';
+@import './components/backdrop';
+@import './components/header';
+@import './components/hero';
+@import './components/benefits';
+@import './components/activity';
+@import './components/team';
+@import './components/customers';
+@import './components/portfolio';
+@import './components/footer';

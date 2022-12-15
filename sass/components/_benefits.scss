@@ -1,0 +1,29 @@
+.benefits__list {
+    @extend %list;
+    gap: 30px;
+    &.item {
+            width: calc((100% - 90px) / 4);
+        }
+}
+
+.benefits__svg {
+    width: 270px;
+    height: 120px;
+    background-color: var(--second-background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.benefits__title {
+    @include font(700, 14px, 1.14, 0.03em);
+    color: var(--title-text-color);
+    margin-bottom: 10px;
+
+}
+
+.benefits__text {
+    @include font(null, 14px, 1.17, 0.03em);
+    color: var(--primary-text-color);
+}

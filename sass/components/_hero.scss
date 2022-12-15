@@ -9,38 +9,29 @@
 }
 
 
-.hero-title {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
+.hero__title {
+    @include font(900, 44px, 1.36, 0.06em);
     color: var(--primary-white-color);
     max-width: 696px;
 
     margin: 0 auto 30px auto;
 }
 
-.hero-btn {
+.hero__btn {
     display: inline-block;
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    text-align: Center;
-    letter-spacing: 0.06em;
+    @extend %button;
+    @include font(700, 16px, 1.88, 0.06em);
     color: var(--primary-white-color);
     background-color: var(--accent-color);
-    cursor: pointer;
     padding: 10px 32px;
-    border-radius: 4px;
     min-width: 216px;
     height: 50px;
-    border: none;
     transition: text-shadow 250ms var(--cubic);
+    &:hover,
+    &:focus {
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
+
 
